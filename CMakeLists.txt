@@ -2,6 +2,9 @@ cmake_minimum_required(VERSION 2.8)
 project(Germ)
 
 set(LINKER_LIBS "")
+set(CMAKE_BUILE_TYPE DEBUG)
+set(CMAKE_CXX_FLAGS_DEBUG "-g -Wall")
+set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++11 -pthread")
 
 # glog
 include("cmake/FindGlog.cmake")

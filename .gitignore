@@ -1,8 +1,20 @@
+# build
+CMakeCache.txt
+CMakeFiles/*
+cmake-build-debug/*
+cmake_install.cmake
+Makefile
+
+# binary
 *.o
 *.a
-CMake*
-.idea*
-LOG/*
-Makefile
-external/*
 binary/*
+
+# external
+external/*
+
+#log
+LOG/*
+
+#idea
+.idea*
