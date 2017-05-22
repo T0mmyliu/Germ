@@ -18,5 +18,5 @@ include("cmake/FindGFlags.cmake")
 include_directories(SYSTEM ${GFLAGS_INCLUDE_DIRS})
 list(APPEND LINKER_LIBS ${GFLAGS_LIBRARIES})
 
-add_executable(binary/epoll epoll.cpp)
+add_executable(binary/epoll raw_example/epoll.cpp)
 target_link_libraries(binary/epoll ${LINKER_LIBS})
